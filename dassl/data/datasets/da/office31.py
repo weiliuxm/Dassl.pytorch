@@ -41,7 +41,7 @@ class Office31(DatasetBase):
         items = []
 
         for domain, dname in enumerate(input_domains):
-            domain_dir = osp.join(self.dataset_dir, dname)
+            domain_dir = osp.join(self.dataset_dir, dname, 'images')
             class_names = listdir_nohidden(domain_dir)
             class_names.sort()
 
